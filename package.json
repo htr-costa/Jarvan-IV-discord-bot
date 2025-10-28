@@ -1,0 +1,39 @@
+{
+  "name": "jarvaniv",
+  "version": "1.0.0",
+  "description": "A Discord bot for League of Legends player profiles - Built as a learning project to practice TypeScript and API integrations",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "deploy": "ts-node src/scripts/deploy-commands.ts",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "league-of-legends",
+    "riot-api",
+    "discord-bot",
+    "lol",
+    "typescript"
+  ],
+  "author": "htR",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/JarvanIV"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "discord.js": "^14.24.0",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
